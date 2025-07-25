@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration Form</title>
+</head>
+<body>
+</body>
+</html> ------------------->  CODE
+                            
+
+1. <!DOCTYPE html> tells the browser this is an HTML5 document.
+
+2. <html lang="en"> sets the language to English.     - ------------------------> EXPLANATION
+
+3. <meta charset="UTF-8"> ensures the page handles text and symbols correctly.
+
+4. <title> sets the tab title of the page.
+
+
+<form action="#" method="post">
+</form>
+
+-----------------------------> CODE
+
+5. action="#" means the form won’t go anywhere when submitted — used for testing.
+
+6. method="post" is used to safely send data.     ------------------------> EXPLANATION
+
+
+
+# Adding the Name Field:
+
+<label for="name">Full Name:</label><br>
+<input type="text" id="name" name="name" required minlength="3"
+       pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed"
+       placeholder="Enter your full name"><br><br>
+
+------------------------------> CODE
+
+
+7. required: field must be filled in before submission.
+
+8. minlength="3": must be at least 3 characters long.   -------------------------> EXPLANATION
+
+9. pattern="[A-Za-z\s]": only allows letters.
+
+10. placeholder: displays light text inside the input to guide the user.
+
+11. type="text": allows the user to type letters.
+
+
+# Adding the Email Field:
+
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+
+---------------------------------> CODE
+
+12. type="email": browser checks that input is in proper email format or not.
+
+13. required: the field must be filled.     ---------------------------> EXPLANATION
+
+
+# Adding the Email Field:
+
+<label for="age">Age:</label><br>
+<input type="number" id="age" name="age" required min="1" max="120" placeholder="Enter your age"><br><br>
+
+---------------------------> CODE
+
+14. type="number": user can only enter numbers.
+
+15. required: the field cannot be left empty.    -------------------------> EXPLANATION
+
+16. min="1" and max="120": sets a range for age.
