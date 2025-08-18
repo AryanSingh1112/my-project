@@ -1,0 +1,63 @@
+DESCRIPTION OF CODE:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Character Counter for Textarea</title>
+</head>
+<body>
+</body>
+</html>
+------------------------------------> CODE
+
+
+Explanation:
+
+<title> → Sets the tab title shown in the browser.------------------------------->EXPLANATION
+<body> → Contains everything visible on the webpage.
+
+
+
+<h2>Live Character Counter</h2>
+
+<textarea id="myTextarea" rows="6" cols="40" placeholder="Type something..."></textarea>
+<p>Character count: <span id="charCount">0</span></p>-------------------------------------------------->CODE
+
+
+<h2> → Displays a heading on the page.
+
+<textarea> → Lets the user type multiple lines of text.
+
+id="myTextarea" → Gives the textarea a unique ID for JavaScript.
+
+rows="6" cols="40" → Sets the size of the textarea.-------------------------------------------------->EXPLANATION
+
+placeholder="Type something..." → Shows guide text inside the box.
+
+<p> → A paragraph that displays the character count text.
+
+<span id="charCount">0</span> → A span to dynamically show the number of characters.
+
+
+
+<script>
+  const textarea = document.getElementById("myTextarea");
+  const counter = document.getElementById("charCount");
+
+  textarea.addEventListener("input", function () {
+    counter.textContent = textarea.value.length;----------------------------------------------------->CODE
+  });
+</script>
+
+
+
+<script> → Starts a JavaScript block.
+
+const textarea = document.getElementById("myTextarea"); --->  Gets the textarea element by ID.
+
+const counter = document.getElementById("charCount"); --->  Gets the counter <span> by ID.----------------------------------------------->EXPLANATION
+
+textarea.addEventListener("input", function() {...}); --->  Runs code whenever the user types or deletes text.
+
+counter.textContent = textarea.value.length; ---->  Updates the counter with the current number of characters in the textarea.
