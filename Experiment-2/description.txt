@@ -1,0 +1,101 @@
+<body>
+
+    <div class="heading"> Banking Form</div>
+
+    <div class="box">
+    <h1> $0</h1>
+
+    <div class="button">Deposit</div>
+    <div class="btn">Withdraw</div>
+    </div>
+</body>
+
+------------------------------------------>  CODE
+
+Explanation:
+
+Basically we are making one heading "banking form" , then we are making one div with class box
+inside that i have created one h1 which is amount and other two are buttons one for deposit and other one for Withdraw.
+
+
+
+CSS CODE:
+
+
+font-family: Arial, sans-serif; 
+background-color: cyan;        
+margin: 30px;                    
+padding: 20px;                
+
+
+------------------>    CODE
+
+Explanation:
+
+1.  Sets the default font to Arial, or sans-serif if Arial is unavailable. 
+2.  Adds outer spacing around the page content. 
+3.  Adds inner spacing inside the body for content  room. 
+
+
+text-align: center;              
+font-size: 30px;                 
+font-weight: bold;              
+text-decoration: underline;     
+margin: 40px;                    
+
+---------------------------->  CODE
+
+Explanation:
+
+4. Centers the heading text horizontally.
+
+5. Increases the text size to 30px for better visibility.
+
+6. Makes the heading bold for emphasis.
+
+7. Underlines the text to draw attention.
+
+8. Adds 40px space around the heading.
+
+
+background-color: white;        
+padding: 50px;                  
+border-radius: 20px;            
+max-width: 350px;               
+margin: auto;                   
+text-align: center;             
+color: green;                   
+
+------------------------> CODE
+
+Explanation:
+
+
+9. Adds 50px inner space inside the box to avoid cramped content.
+
+10. Rounds the corners of the box with a 20px radius.
+
+11. Limits the box's width to a maximum of 350px.
+
+12. Horizontally centers the box on the page.
+
+13. Aligns the box’s content to the center.
+
+
+.button{
+
+    background-color: green;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+-------------------------> CODE
+
+Explanation:
+
+14. We are giving bg colur as green.
+15. We are giving colur white.
+16. giving padding of 15px from all sides.
+

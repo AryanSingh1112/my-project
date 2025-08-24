@@ -1,6 +1,6 @@
 body{
     font-family: Arial, sans-serif;
-    background-color: violet;
+    background-color: cyan;
     margin: 30px;
     padding: 20px;
 
@@ -12,7 +12,6 @@ body{
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-    color: white;
     text-decoration: underline;
     margin: 40px;
 }
@@ -21,9 +20,33 @@ body{
 .box{
 
     background-color: white;
-    padding: 20px;
+    padding: 50px;
     border-radius: 20px;
     max-width: 350px;
-    margin: 0 auto;
+    margin: auto;
+    text-align: center;
+    color: green;
 
+}
+
+.button{
+
+    background-color: green;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+
+.btn{
+
+    background-color: red;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+    
 }
