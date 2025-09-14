@@ -1,0 +1,96 @@
+DESCRIPTION :
+
+
+
+1. Main App Component & Product Data
+
+function App() {
+  const product1 = { name: "Wireless Mouse", price: "25.99", status: "In Stock" };
+  const product2 = { name: "Keyboard", price: "45.50", status: "Out of Stock" };
+  const product3 = { name: "Monitor", price: "199.99", status: "In Stock" };
+
+  return (
+    <>
+      <h1>Product List</h1>
+      <div id="card-container">
+        <ProductCard name={product1.name} price={product1.price} status={product1.status} />
+        <ProductCard name={product2.name} price={product2.price} status={product2.status} />
+        <ProductCard name={product3.name} price={product3.price} status={product3.status} />
+      </div>
+    </>
+  )------------------------------------------------------------------> CODE BLOCK
+}
+
+
+EXPLANATION:
+- Defines three product objects and passes their data as props to the `ProductCard` component.
+- Renders a heading and a flex container holding all product cards.
+
+
+
+2. ProductCard Component
+
+
+function ProductCard({ name, price, status }) {
+  return (
+    <div>
+      <div id="product-card">
+        <h3>{name}</h3>
+        <p>Price: ${price}</p>
+        <p>Status: {status}</p>
+      </div>
+    </div>
+  )-----------------------------------------------> CODE BLOCK
+}
+
+
+EXPLANATION:
+- Receives product details as props and displays them inside a styled card.
+- Uses semantic HTML for product name, price, and status.
+
+
+
+3. Flexbox Layout & Card Styling (App.css)
+
+```css
+#card-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 30px;---------------------------------------------------> CODE BLOCK
+  padding: 20px;
+}
+
+#product-card {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+EXPLANATION:
+- `#card-container` uses flexbox to arrange product cards in a row with spacing and alignment.
+- `#product-card` styles each card with border, background, padding, and shadow for a clean look.
+
+
+
+4. Heading and Typography (App.css)
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #f9f7f7;--------------------------------------------->CODE BLCOK
+}
+
+
+EXPLANATION:
+- Styles the main heading for the product list, centering and coloring it for emphasis.
+
+All styles are kept in `App.css` for separation of concerns. The code demonstrates React props, component reuse, and modern CSS layout.
