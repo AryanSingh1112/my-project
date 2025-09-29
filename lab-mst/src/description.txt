@@ -1,0 +1,123 @@
+DESCRIPTION(LAB-MST)
+
+
+
+const [books] = useState([
+    { title: "Book1", author: "author1", year: 2021 },
+    { title: "Book2", author: "author2", year: 2022 },
+    { title: "Book3", author: "author3", year: 2023 },
+  ]);-----------------------------------------------------------------------------> CODE BLOCK
+
+
+
+  EXPLANATION:
+
+  1. This is the props that we are passing as the data.
+  2. this is the data which will show in browser.
+
+
+
+
+  const filteredBooks = books.filter((book) =>
+    book.title.toLowerCase().includes(search.toLowerCase())
+  );--------------------------------------------------------------------->CODE BLOCK
+
+
+  EXPLANATION:
+
+  1. This is the search feature named as filteredbooks.
+  2. This is the feature for searhing the books by the title of book.
+
+
+  
+import BookItem from "./BookItem";
+
+function BookList({ books }) {
+  return (
+    <div id="book-list">
+      {books.map((book, index) => (
+        <BookItem key={index} book={book} />
+      ))}
+    </div>
+  );
+}
+
+export default BookList;--------------------------------------------------> code BLCOK
+
+
+
+EXPLANATION:
+
+1. This is the component that we made to list all books properly.
+2. We render this compnent in app.jsx file.
+
+
+
+
+
+function BookItem({ book }) {
+  return (
+    <div id="book-item">
+      <span>
+        <strong>{book.title}</strong> by {book.author} ({book.year})
+      </span>
+    </div>
+  );
+}
+
+export default BookItem;---------------------------------------------------------------------CODE BLOCK
+
+
+
+EXPLANATION:
+
+1. This is the component which prints the data properly by taking props .
+2. It print in exact order that we are giving or listing here.
+
+
+
+
+
+
+#app-container {
+  width: 500px;
+  margin: 50px auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: purple;
+  color: white;
+}
+
+#search-box {
+  width: 100%;
+  padding: 8px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  
+
+}
+
+#book-list {
+  margin-top: 20px;---------------------------------------------------------------------------------> CODE BLOCK
+}
+
+#book-item {
+  padding: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: left;
+}
+
+
+
+
+EXPLANATION:
+
+1. This is the css code that i am suing to make desing beautiful and properly aligned.
+2. This i basically applying in app.jsx file only.

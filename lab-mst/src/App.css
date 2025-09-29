@@ -1,0 +1,36 @@
+
+
+#app-container {
+  width: 500px;
+  margin: 50px auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: purple;
+  color: white;
+}
+
+#search-box {
+  width: 100%;
+  padding: 8px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  
+
+}
+
+#book-list {
+  margin-top: 20px;
+}
+
+#book-item {
+  padding: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: left;
+}
