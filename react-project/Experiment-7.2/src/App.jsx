@@ -1,4 +1,5 @@
 import "./App.css"; // make sure styles are applied
+// Trigger rebuild: import path is correct, should be ./components/LibraryManagement
 import LibraryManagement from "./components/LibraryManagement";
 
 function App() {
