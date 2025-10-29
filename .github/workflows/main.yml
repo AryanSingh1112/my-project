@@ -5,12 +5,12 @@ on:
     branches:
       - main
     paths:
-      - 'React-project/Experiment-7.2/**'
+  - 'react-project/Experiment-7.2/**'
   pull_request:
     branches:
       - main
     paths:
-      - 'React-project/Experiment-7.2/**'
+  - 'react-project/Experiment-7.2/**'
   workflow_dispatch:
 
 jobs:
@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: React-project/Experiment-7.2
+  working-directory: react-project/Experiment-7.2
         
     steps:
       # Step 1: Checkout code
