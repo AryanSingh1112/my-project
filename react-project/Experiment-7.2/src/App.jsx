@@ -1,5 +1,5 @@
 import "./App.css"; // make sure styles are applied
-import LibraryManagement from "./component/LibraryManagement";
+import LibraryManagement from "./components/LibraryManagement";
 
 function App() {
   return (
